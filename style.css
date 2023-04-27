@@ -1,0 +1,132 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 2px solid red;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+:root {
+	/*variable*/
+	--bg-color: #1f242d;
+	--second-bg-color: #323946;
+	--text-color: #fff;
+	--main-color: #0ef;
+}
+
+html {
+	/*font-size: 62.5%;*/
+	overflow-x: hidden;
+}
+
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+	/*height: 800vh;*/
+}
+
+
+/****HEADER SECTION****/
+
+/*container*/
+#navbar {
+	background: var(--bg-color);
+	padding: 1.5rem 9%;
+	color: white !important;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+
+/*My portfolio*/
+#logo {
+	color: white;
+	font-weight: 700;
+}
+
+/*navlinks*/
+#navbar a:hover,
+#navbar a.active {
+	color: var(--main-color) !important;
+}
+
+/*burger icon*/
+#burger {
+	font-size: 2.5rem;
+	padding-top: 1rem;
+}
+
+/****HOME SECTION****/
+/*home, about, gallery, contact size*/
+#home,
+#about,
+#gallery,
+#contact {
+	padding: 5rem 8% 2rem;
+	min-height: 100vh;
+}
+
+/*color of span*/
+span {
+	color: var(--main-color);
+}
+
+/*social media buttons*/
+.social-media a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 2rem;
+	height: 2rem;
+	background: transparent;
+	border: .2rem solid var(--main-color);
+	border-radius: 50%;  /*makes the box circle*/
+	font-size: 1.5rem;
+	color: var(--main-color);
+	margin: 0 1.5rem 0 0;
+	transition: 1s ease;
+}
+
+.social-media a:hover {
+	background: var(--main-color);
+	color: var(--second-bg-color)
+	box-shadow:0 0 1rem var(--main-color);
+}
+
+.home-content {
+	margin-top: 50px;
+}
+
+.home-content h3 {
+	font-weight: 500;
+}
+
+.home-content h1 {
+	font-size: 3rem;
+	font-weight: 800;
+	line-height: 1.3;
+}
+
+#home-img {
+	max-width: 300px;
+	max-height: 350px;
+}
+
+/****ABOUT SECTION****/
+
+#about,
+#contact {
+	background: var(--second-bg-color);
+}
+
+#about-img {
+	max-width: 300px;
+	max-height: 300px;
+}
+
+
+
