@@ -23,7 +23,7 @@
 </head>
 <body>
 	<!-- Navbar Section -->
-	<header id="header">
+	<header id="header container-fluid">
 		<nav class="navbar navbar-expand-lg" id="navbar">
 
 		  <a class="navbar-brand text-white py-0" href="#home" id="logo">My Portfolio</a>
@@ -55,7 +55,7 @@
 	        <div class="col-sm-12 col-lg-8 order-2 order-lg-1 home-content">
 	            <h3 class="my-0">Hello, It's Me</h3>
 				<h1 class="my-0">Alexis Prex B De Guzman</h1>
-				<h3 class="my-0">And I'm a <span class="multiple-text"></span></h3>
+				<!-- <h3 class="my-0">And I'm a <span class="multiple-text"></span></h3> -->
 	            <p class="mt-3">I have experience building dynamic web applications using HTML, CSS, JavaScript, and various server-side technologies. I'm passionate about using technology to solve real-world problems and provide value to users. Let's work together to bring your ideas to life!</p>
 	            <div class="social-media">
 					<a href="https://www.facebook.com/alexis.deguzman.18/" target="_blank"><i class='bx bxl-facebook'></i></a>
@@ -78,12 +78,6 @@
 	            <h2 class="heading">About <span>Me</span></h2>
 				<h3>Fullstack Developer</h3>
 	            <p class="">I am a full-stack developer with a background in Business Administration, specifically a major in Marketing Management from the University of Santo Tomas. As a career shifter, I pursued my passion for programming and gained expertise in both front-end and back-end web development technologies. With my skills in building end-to-end web applications, I bring a unique perspective that aligns business needs with user requirements. My background in marketing management also allows me to develop web applications that cater to the needs of businesses and users alike.</p>
-	            <div class="social-media">
-					<a href="#"><i class='bx bxl-facebook' ></i></a>
-					<a href="#"><i class='bx bxl-gitlab' ></i></a>
-					<a href="#"><i class='bx bxl-github' ></i></i></a>
-					<a href="#"><i class='bx bxl-linkedin' ></i></a>
-				</div>
 	        </div>
 	        <div class="col-sm-12 col-lg-4 order-1 order-lg-1 about-img text-center">
 	            <img src="./images/b.png" class="img-fluid" id="about-img"/>
@@ -91,6 +85,28 @@
 	    </div>
 	</section>
 
+	<section id="gallery">
+		
+	</section>
+
+	<!-- contact section design -->
+	<section class="contact container-fluid my-5" id="contact">
+		<h2 class="heading text-center">Contact <span>Me!</span></h2>
+
+		<form action="#">
+			<div class="input-box">
+				<input type="text" placeholder="Full Name">
+				<input type="email" placeholder="Email Address">
+
+			</div>
+			<div class="input-box">
+				<input type="number" placeholder="Mobile Number">
+				<input type="text" placeholder="Email Subject">
+			</div>
+			<textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+			<input type="submit" value="Send Message" class="btn" id="submit">
+		</form>
+	</section>
 
 
 	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -100,10 +116,7 @@
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- type js -->
-    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-
     <!-- custom js -->
-    <script src='js/index.js'></script>
+	<script src='js/index.js'></script>
 </body>
 </html>
