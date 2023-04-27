@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	outline: 2px solid red;
+	/*outline: 2px solid red;*/
 	font-family: 'Poppins', sans-serif;
 	scroll-behavior: smooth;
 }
@@ -230,4 +230,114 @@ span {
 .footer-iconTop a i {
 	font-size: 1.5rem;
 	color: var(--second-bg-color);
+}
+
+/*gallery styles*/
+
+.gallery {
+	background: var(--second-bg-color);
+}
+
+.gallery h2 {
+	margin-bottom: 4rem;
+}
+
+.gallery-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);  /*it creates three columns of equal width*/
+	/*align-items: center;*/
+	gap: 2.5rem;
+}
+
+.gallery-container .gallery-box {
+	position: relative;
+	border-radius: 2rem;
+	box-shadow: 0 0 1rem var(--bg-color);
+	overflow: hidden;
+	display: flex;
+}
+
+.gallery-box img {
+	width: 100%;
+	transition: .5s ease;	
+}
+
+.gallery-box:hover img {
+	transform: scale(1.1); /*zoom every hover*/
+}
+
+.gallery-box .gallery-layer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color)); /*makes the background gradient*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; /*the content is arranged vertically within the container from top to bottom.*/
+	text-align: center;
+	padding: 0 4rem;
+	transform: translateY(100%);
+	transition: .5s ease;
+}
+
+.gallery-box:hover .gallery-layer {
+	transform: translateY(0);
+}
+
+.gallery-layer h4 {
+	font-size: 3rem;
+}
+
+.gallery-layer p {
+	font-size: 1.6rem;
+	margin: .3rem 0 1rem;
+}
+
+.gallery-layer a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	background: var(--text-color);
+	border-radius: 50%;
+}
+
+.gallery-layer a i {
+	font-size: 1rem;
+	color: var(--second-bg-color);
+}
+
+@media (max-width: 991px) {
+
+	.gallery {
+		padding-bottom: 7rem;
+	}
+
+	
+}
+
+@media (max-width: 768px) {
+	
+	.gallery h2 {
+		margin- bottom: 3rem;
+	}
+
+	.gallery-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+
+@media (max-width: 617px) {
+	.gallery-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 365px) {
+
 }
