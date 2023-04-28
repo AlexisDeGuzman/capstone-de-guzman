@@ -372,6 +372,10 @@ span {
 		width: 100%;
 
 	}
+
+	.footer-text p {
+		font-size: 1rem;
+	}
 }
 
 @media (max-width: 365px) {
