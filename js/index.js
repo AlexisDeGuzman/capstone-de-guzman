@@ -32,10 +32,10 @@ menuIcon.onclick = () => {
 -add class on span tag to be used in this js file
 -do this:
 */
-// const typed = new Typed('.multiple-text', {
-//       strings: ['Frontend Developer', 'Backend Developer', 'Fullstack Developer'],
-//       typeSpeed: 100,
-//       backSpeed: 100,
-//       backDelay: 1000,
-//       loop: true
-//     });
+const typed = new Typed('.multiple-text', {
+      strings: ['Frontend Developer', 'Backend Developer', 'Fullstack Developer'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true
+    });
