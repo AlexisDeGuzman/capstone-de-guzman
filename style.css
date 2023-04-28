@@ -199,6 +199,10 @@ span {
 	background: var(--bg-color);
 }
 
+.modal-title {
+	color: var(--main-color);
+}
+
 /****FOOTER SECTION****/
 
 .footer {
@@ -263,7 +267,7 @@ span {
 
 .gallery-box img {
 	width: 100%;
-	transition: .5s ease;	
+	transition: .5s ease;
 }
 
 .gallery-box:hover img {
