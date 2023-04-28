@@ -317,7 +317,9 @@ span {
 		padding-bottom: 7rem;
 	}
 
-	
+	.gallery-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 @media (max-width: 768px) {
@@ -327,7 +329,7 @@ span {
 	}
 
 	.gallery-container {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 	}
 }
 
