@@ -177,7 +177,7 @@ span {
 .contact form .input-box input,
 .contact form textarea {
 	width: 100%;
-	padding: 1.5rem;
+	padding: 1rem;
 	font-size: 1rem;
 	color: var(--text-color);
 	background: var(--bg-color);
@@ -237,7 +237,7 @@ span {
 	color: var(--second-bg-color);
 }
 
-/*gallery styles*/
+/*GALLERY STYLES*/
 
 .gallery {
 	background: var(--bg-color);
@@ -366,6 +366,11 @@ span {
 
 	.gallery-layer p {
 		font-size: 1rem;
+	}
+
+	.contact form .input-box input {
+		width: 100%;
+
 	}
 }
 
