@@ -64,10 +64,15 @@ body {
 /*home, about, gallery, contact size*/
 #home,
 #about,
-#gallery,
-#contact {
+#gallery {
 	padding: 5rem 8% 2rem;
 	min-height: 100vh;
+	width: 100%;
+}
+
+#contact {
+	padding: 5rem 8% 2rem;
+	min-height: 80vh;
 	width: 100%;
 }
 
