@@ -381,6 +381,10 @@ span {
 
 	}
 
+	.contact form textarea {
+		height: 90px;
+	}
+
 	.footer-text p {
 		font-size: 1rem;
 	}
