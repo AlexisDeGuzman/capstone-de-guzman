@@ -320,6 +320,7 @@ span {
 	min-height: 85vh;
 	max-height: 80vh;
 	width: 100%;
+	margin-bottom: 3rem;
 }
 
 .contact h2 {
@@ -472,7 +473,7 @@ span {
 	}
 
 	.contact form textarea {
-		height: 90px;
+		height: 20vh;
 	}
 
 	.footer-text p {
