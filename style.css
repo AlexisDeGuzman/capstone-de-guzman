@@ -95,6 +95,7 @@ span {
 	color: var(--main-color);
 	margin: 0 1.5rem 0 0;
 	transition: 1s ease;
+	text-decoration: none;
 }
 
 .social-media a:hover {

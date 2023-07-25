@@ -11,6 +11,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
 
+	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -23,29 +24,64 @@
 </head>
 <body>
 	<!-- Navbar Section -->
-	<header id="header container-fluid">
+	<header id="header" class="container-fluid">
 		<nav class="navbar navbar-expand-md py-md-4" id="navbar">
 
-		  <a class="navbar-brand text-white py-0" href="#home" id="logo">My Portfolio</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="burger">
-		    <i class='bx bx-menu navbar-toggler-icon text-white' id="menu-icon"></i>
-		  </button>
-		  <div class="collapse navbar-collapse pb-3 pb-md-0" id="navbarNav">
-		    <ul class="navbar-nav ml-auto">
-		      <li class="nav-item px-3 active">
-		        <a class="nav-link text-white py-0" href="#home">Home <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item px-3">
-		        <a class="nav-link text-white py-0" href="#about">About Me</a>
-		      </li>
-		      <li class="nav-item px-3">
-		        <a class="nav-link text-white py-0" href="#gallery">Gallery</a>
-		      </li>
-		      <li class="nav-item px-3">
-		        <a class="nav-link text-white py-0" href="#contact">Contact Me!</a>
-		      </li>
-		    </ul>
-		  </div>
+			<a 
+				class="navbar-brand text-white py-0" 
+				href="#home" 
+				id="logo"
+			>
+				My Portfolio
+			</a>
+			<button 
+				class="navbar-toggler" 
+				type="button" 
+				data-toggle="collapse" 
+				data-target="#navbarNav" 
+				aria-controls="navbarNav" 
+				aria-expanded="false" 
+				aria-label="Toggle navigation" 
+				id="burger"
+			>
+		    	<i class='bx bx-menu navbar-toggler-icon text-white' id="menu-icon"></i>
+			</button>
+			<div class="collapse navbar-collapse pb-3 pb-md-0" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item px-3 active">
+						<a 
+							class="nav-link text-white py-md-0" 
+							href="#home" 
+						>
+							Home <span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item px-3">
+						<a 
+							class="nav-link text-white py-md-0" 
+							href="#about"
+						>
+							About Me
+						</a>
+					</li>
+					<li class="nav-item px-3">
+						<a 
+							class="nav-link text-white py-md-0" 
+							href="#gallery"
+						>
+							Gallery
+						</a>
+					</li>
+					<li class="nav-item px-3">
+						<a 
+							class="nav-link text-white py-md-0" 
+							href="#contact"
+						>
+						Contact Me!
+					</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 	<!-- Navbar Section End -->
@@ -119,8 +155,6 @@
 					<a href="https://m.facebook.com/story.php?story_fbid=pfbid0hfeEkhaUVmxnvemmLaXv4MQmtaQvhyJcGkYkUApj97T8CBCDvYmeireSdsd9GeyFl&id=100000422659895&mibextid=NnVzG8" target="_blank"><i class='bx bx-link-external' ></i></a>
 				</div>
 			</div>
-
-			
 		</div>
 	</section>
 
@@ -132,7 +166,6 @@
 			<div class="input-box">
 				<input type="text" placeholder="Full Name">
 				<input type="email" placeholder="Email Address">
-
 			</div>
 			<div class="input-box">
 				<input type="number" placeholder="Mobile Number">
@@ -145,22 +178,22 @@
 
 	<!-- Modal Start -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting me!</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body text-dark">
-	        Message Successfully Sent
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Thank you for contacting me!</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body text-dark">
+				        Message Successfully Sent
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- footer design  -->

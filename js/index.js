@@ -1,13 +1,33 @@
 
 /*================== toggle icon navbar ==================*/
 
-let menuIcon = document.querySelector('#menu-icon');
+/*let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.nav-item');
 
 menuIcon.onclick = () => {
       menuIcon.classList.toggle('bx-x');
       navbar.classList.toggle('active');
-};
+};*/
+
+/*================== Exit navbar on click ==================*/
+document.addEventListener("DOMContentLoaded", function () {
+    // Get all the navbar links
+    const navbarLinks = document.querySelectorAll("#navbarNav a.nav-link");
+
+    // Add a click event listener to each link
+    navbarLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        // Check if the navbar is currently expanded
+        const navbar = document.querySelector("#navbarNav");
+        const isNavbarExpanded = navbar.classList.contains("show");
+
+        // If the navbar is expanded, toggle it to close
+        if (isNavbarExpanded) {
+          document.querySelector("#burger").click(); // Simulate a click on the burger icon to close the navbar
+        }
+      });
+    });
+  });
 
 /*================== scroll reveal ==================*/
 /*ScrollReveal({
