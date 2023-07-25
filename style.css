@@ -226,6 +226,18 @@ span {
 	margin: 1rem 0 3rem;
 }
 
+/* Custom CSS to change the color of carousel control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--bg-color);
+}
+
+/* Optional: Change the color of the carousel control icons on hover */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: var(--main-color);
+}
+
 /****PROJECTS SECTION STYLES****/
 .projects {
 	background: var(--second-bg-color);
