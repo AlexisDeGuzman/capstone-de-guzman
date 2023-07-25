@@ -12,7 +12,7 @@ menuIcon.onclick = () => {
 /*================== Exit navbar on click ==================*/
 document.addEventListener("DOMContentLoaded", function () {
     // Get all the navbar links
-    const navbarLinks = document.querySelectorAll("#navbarNav a.nav-link");
+    const navbarLinks = document.querySelectorAll("a.nav-link");
 
     // Add a click event listener to each link
     navbarLinks.forEach((link) => {
