@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading, .gallery h2', { origin: 'top' });
+ScrollReveal().reveal('.home-content, .heading, .projects h2', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .box-1', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });

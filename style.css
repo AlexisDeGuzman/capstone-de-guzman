@@ -61,10 +61,10 @@ body {
 }
 
 /****HOME SECTION****/
-/*home, about, gallery, contact size*/
+/*home, about, projects, contact size*/
 #home,
 #about,
-#gallery {
+#projects {
 	padding: 5rem 8% 2rem;
 	min-height: 100vh;
 	width: 100%;
@@ -264,25 +264,25 @@ span {
 
 /*GALLERY STYLES*/
 
-.gallery {
+.projects {
 	background: var(--bg-color);
 }
 
-.gallery h2 {
+.projects h2 {
 	margin-bottom: 4rem;
 	font-size: 3rem;
 	font-weight: 800;
 	line-height: 1.3;
 }
 
-.gallery-container {
+.projects-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);  /*it creates three columns of equal width*/
 	/*align-items: center;*/
 	gap: 2.5rem;
 }
 
-.gallery-container .gallery-box {
+.projects-container .projects-box {
 	position: relative;
 	border-radius: 2rem;
 	box-shadow: 0 0 1rem var(--bg-color);
@@ -290,16 +290,16 @@ span {
 	display: flex;
 }
 
-.gallery-box img {
+.projects-box img {
 	width: 100%;
 	transition: .5s ease;
 }
 
-.gallery-box:hover img {
+.projects-box:hover img {
 	transform: scale(1.1); /*zoom every hover*/
 }
 
-.gallery-box .gallery-layer {
+.projects-box .projects-layer {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -316,20 +316,20 @@ span {
 	transition: .5s ease;
 }
 
-.gallery-box:hover .gallery-layer {
+.projects-box:hover .projects-layer {
 	transform: translateY(0);
 }
 
-.gallery-layer h4 {
+.projects-layer h4 {
 	font-size: 3rem;
 }
 
-.gallery-layer p {
+.projects-layer p {
 	font-size: 1.6rem;
 	margin: .3rem 0 1rem;
 }
 
-.gallery-layer a {
+.projects-layer a {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -339,60 +339,60 @@ span {
 	border-radius: 50%;
 }
 
-.gallery-layer a i {
+.projects-layer a i {
 	font-size: 1rem;
 	color: var(--second-bg-color);
 }
 
 @media (max-width: 1200px) {
 
-	.gallery {
+	.projects {
 		padding-bottom: 7rem;
 	}
 
-	.gallery-container {
+	.projects-container {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
-	.gallery-layer h4 {
+	.projects-layer h4 {
 		font-size: 5rem;
 	}
 
-	.gallery-layer p {
+	.projects-layer p {
 		font-size: 2.5rem;
 	}
 }
 
 @media (max-width: 768px) {
 	
-	.gallery h2 {
+	.projects h2 {
 		margin- bottom: 3rem;
 	}
 
-	.gallery-container {
+	.projects-container {
 		grid-template-columns: repeat(1, 1fr);
 	}
 
-	.gallery-layer h4 {
+	.projects-layer h4 {
 		font-size: 4rem;
 	}
 
-	.gallery-layer p {
+	.projects-layer p {
 		font-size: 1.5rem;
 	}
 }
 
 
 @media (max-width: 617px) {
-	.gallery-container {
+	.projects-container {
 		grid-template-columns: 1fr;
 	}
 
-	.gallery-layer h4 {
+	.projects-layer h4 {
 		font-size: 3rem;
 	}
 
-	.gallery-layer p {
+	.projects-layer p {
 		font-size: 1rem;
 	}
 
