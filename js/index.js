@@ -16,18 +16,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add a click event listener to each link
     navbarLinks.forEach((link) => {
-      link.addEventListener("click", function () {
-        // Check if the navbar is currently expanded
-        const navbar = document.querySelector("#navbarNav");
-        const isNavbarExpanded = navbar.classList.contains("show");
+        link.addEventListener("click", function () {
+            // Remove the active class from all links
+            navbarLinks.forEach((link) => link.classList.remove("active"));
 
-        // If the navbar is expanded, toggle it to close
-        if (isNavbarExpanded) {
-          document.querySelector("#burger").click(); // Simulate a click on the burger icon to close the navbar
-        }
-      });
+            // Add the active class to the clicked link
+            link.classList.add("active");
+
+            // Check if the navbar is currently expanded
+            const navbar = document.querySelector("#navbarNav");
+            const isNavbarExpanded = navbar.classList.contains("show");
+
+            // If the navbar is expanded, toggle it to close
+            if (isNavbarExpanded) {
+                document.querySelector("#burger").click(); // Simulate a click on the burger icon to close the navbar
+            }
+        });
     });
-  });
+});
+
 
 /*================== scroll reveal ==================*/
 /*ScrollReveal({
