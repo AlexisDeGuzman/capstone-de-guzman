@@ -71,12 +71,6 @@ body {
 	width: 100%;
 }
 
-#contact {
-	padding: 5rem 8% 2rem;
-	min-height: 80vh;
-	width: 100%;
-}
-
 
 /****HOME SECTION STYLES****/
 /*color of span*/
@@ -322,6 +316,10 @@ span {
 /****CONTACT SECTION STYLES****/
 #contact {
 	background: var(--bg-color);
+	padding: 5rem 8% 2rem;
+	min-height: 85vh;
+	max-height: 80vh;
+	width: 100%;
 }
 
 .contact h2 {
@@ -346,7 +344,7 @@ span {
 .contact form .input-box input,
 .contact form textarea {
 	width: 100%;
-	padding: 1rem;
+	padding: 0.3rem;
 	font-size: 1rem;
 	color: var(--text-color);
 	background: var(--second-bg-color);
@@ -360,10 +358,11 @@ span {
 
 .contact form textarea {
 	resize: none; /*removes the ability of the textarea to resize*/
+	height: 20vh;
 }
 
 .contact form .btn {
-	margin-top: 2rem;
+	margin-top: 1rem;
 	cursor: pointer;
 }
 
