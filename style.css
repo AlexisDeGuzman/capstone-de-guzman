@@ -449,6 +449,14 @@ span {
 	.projects-layer p {
 		font-size: 1rem;
 	}
+
+	.contact form textarea {
+		height: 10vh;
+	}
+
+	.contact form .input-box input, .contact form textarea {
+		margin: 0.3rem 0;
+	}
 }
 
 
