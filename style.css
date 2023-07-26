@@ -116,7 +116,6 @@ span {
 }
 
 #home-img {
-	max-width: 350px;
 	max-height: 600px;
 	animation: floatImage 4s ease-in-out infinite;
 }
@@ -148,7 +147,6 @@ span {
 #about-img {
 	max-width: 100%;
 	max-height: 500px;
-	min-width: 350px;
 	animation: floatImage 4s ease-in-out infinite;
 }
 
