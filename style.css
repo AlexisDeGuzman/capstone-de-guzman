@@ -244,8 +244,8 @@ span {
 
 .projects-container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);  /*it creates three columns of equal width*/
-	/*align-items: center;*/
+	grid-template-columns: repeat(2, 1fr);  /*it creates three columns of equal width*/
+/*	align-items: center;*/
 	gap: 2.5rem;
 }
 
@@ -466,11 +466,11 @@ span {
 	}
 
 	.projects-layer h4 {
-		font-size: 2rem;
+		font-size: 1rem;
 	}
 
 	.projects-layer p {
-		font-size: 1rem;
+		font-size: .7rem;
 	}
 
 	.contact form .input-box input {
